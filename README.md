@@ -1,50 +1,21 @@
-# Welcome to your Expo app 👋
+# Plankout - An AI Assisted Workout Planning App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![image](https://github.com/user-attachments/assets/0e713d06-f1a2-4f6e-88ae-156f71260f43)
 
-## Get started
+## Functional Requirements:
 
-1. Install dependencies
+- Create Workout Plans on the Client's Request.
+- Manage Workout Plans according to Progress / Experience.
+- Create Workout Prompts for DeepSeek R1.
+- Convert DeepSeek R1's Response into JSON Format to be Serverd Back to the Client.
+- Store User Info on the Server if User is Logged In.
+- Server Sync
 
-   ```bash
-   npm install
-   ```
+## Non Functional Requirements:
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Low Server - Client Latency
+- Low Server - AI Latency
+- UI Elements to Provide Ease of Use to the User - such as Manually Tracking the Current Workout
+- JSON Data Conversion should be correct and predefined JSON Structure should be provided as a prompt to the GenAI (Deepseek R1)
+- The Mobile App should be at least Partially Operable without Internet Connectivity (for Workout Tracking)
+- The Syncing with Server Function should automatically be performed based on the Local Storage Token (JWT)
